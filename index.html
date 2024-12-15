@@ -7,124 +7,151 @@
     <style>
         /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f0f4f8;
             color: #333;
-            scroll-behavior: smooth;
         }
-        a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+
+        /* Header Styles */
         header {
-            background-color: #222;
+            background: linear-gradient(135deg, #0073e6, #005bb5);
             color: #fff;
-            padding: 10px;
+            padding: 2rem 0;
             text-align: center;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        nav a {
-            margin: 0 10px;
-            color: #fff;
-            font-weight: bold;
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 2px;
         }
-        h1 {
-            margin: 5px 0;
-            font-size: 1.5em;
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+            font-weight: 300;
         }
+
+        /* Main Content */
+        main {
+            padding: 2rem;
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Styles */
         section {
-            margin: 60px auto 20px;
-            padding: 15px;
-            max-width: 850px;
-            background-color: #fff;
-            box-shadow: 0 0 8px rgba(0,0,0,0.1);
-            border-radius: 5px;
+            margin-bottom: 2rem;
         }
-        h2 {
-            color: #444;
-            border-bottom: 1px solid #0073e6;
-            padding-bottom: 3px;
-            font-size: 1.2em;
-        }
-        h3 {
-            margin: 10px 0 5px;
-            font-size: 1em;
-            color: #333;
-        }
-        p {
-            margin: 5px 0 10px;
-            font-size: 0.9em;
+        section h2 {
+            font-size: 1.8rem;
+            color: #0073e6;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #f0f4f8;
+            padding-bottom: 0.3rem;
         }
         ul {
-            list-style: none;
             padding: 0;
-            font-size: 0.9em;
+            list-style: none;
         }
         li {
-            margin-bottom: 8px;
+            margin-bottom: 1rem;
         }
+
+        /* Links */
+        .contact a {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+            color: #005bb5;
+        }
+
+        /* Profile Paragraph */
+        p {
+            margin: 0.8rem 0;
+            line-height: 1.8;
+        }
+
+        /* Add Subtle Hover Effect */
+        li:hover {
+            background: #f0f4f8;
+            border-radius: 5px;
+            padding: 0.5rem;
+        }
+
+        /* Footer for Better Look */
         footer {
             text-align: center;
-            margin: 10px 0;
-            font-size: 0.8em;
-            color: #555;
+            padding: 1rem 0;
+            background: #0073e6;
+            color: #fff;
+            margin-top: 2rem;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
-    <!-- Fixed Header with Navigation -->
     <header>
-        <h1>Kuber Lekhi</h1>
-        <p>Cloud & DevOps Engineer</p>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-        </nav>
+        <h1>KUBER LEKHI</h1>
+        <p>Cloud Practitioner | AWS Certified | DevOps</p>
     </header>
-
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Certified AWS Cloud Practitioner with hands-on experience in deploying and managing AWS solutions. Knowledgeable in DevOps, Linux, and AWS. Proven problem-solving skills demonstrated through projects like multi-tier websites, IAM configuration, and S3 website hosting.
-        </p>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <h3>Think Future Technologies (Sep-Dec 2024)</h3>
-        <p><strong>Cloud and DevOps Intern</strong></p>
-        <p>
-            Contributed to cloud-based projects involving AWS and DevOps tools. Gained practical experience in cloud deployments, CI/CD pipelines, and infrastructure management. Developed automation scripts for infrastructure setup and implemented monitoring solutions.
-        </p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Infrastructure as Code (IaC) with Terraform:</strong> Designed and created AWS EC2 instances and VPC for scalable architecture.</li>
-            <li><strong>Automating AWS Infrastructure:</strong> Deployed static websites on AWS S3 and CloudFront using Bash scripting.</li>
-            <li><strong>Containerized Static Website:</strong> Created lightweight containers for static website deployment using Docker and Nginx.</li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
+    <main>
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>Email: <a href="mailto:kuberlekhi@gmail.com">kuberlekhi@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/kuberlekhi" target="_blank">linkedin.com/in/kuberlekhi</a></li>
+                <li>GitHub: <a href="https://github.com/KuberLekhi" target="_blank">github.com/KuberLekhi</a></li>
+            </ul>
+        </section>
+        <section class="profile">
+            <h2>Profile</h2>
+            <p>Certified AWS Cloud Practitioner with hands-on experience in deploying and managing AWS solutions. Skilled in DevOps, CI/CD pipelines, and AWS services.</p>
+        </section>
+        <section class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>🌟 Automating Website Deployment with Terraform</strong>
+                    <p>Automated the deployment of a static website using Terraform to provision an S3 bucket, set up a bucket policy, and upload an index.html file for hosting. Enhanced deployment efficiency with fully automated infrastructure as code practices.</p>
+                    <p><strong>Skills Used:</strong> Terraform, AWS S3, Infrastructure as Code (IaC)</p>
+                </li>
+                <li>
+                    <strong>🚀 AWS Infrastructure Deployment Using Terraform</strong>
+                    <p>Created a complete AWS environment with Terraform using both HCL and JSON configurations. Deployed resources such as VPC, EC2, and security groups while ensuring network segmentation and security.</p>
+                    <p><strong>Skills Used:</strong> Terraform, AWS EC2, AWS VPC, Security Groups</p>
+                </li>
+                <li>
+                    <strong>🚀 Automating S3 Bucket Hosting with Python and Boto3</strong>
+                    <p>Developed a Python script using Boto3 to automate the creation of an S3 bucket, configure public access, and upload website files for hosting. Simplified repetitive tasks with automation to save time and reduce errors.</p>
+                    <p><strong>Skills Used:</strong> Python, Boto3, AWS S3</p>
+                </li>
+                <li>
+                    <strong>🌐 Automating AWS Infrastructure with Bash Scripting</strong>
+                    <p>Automated the deployment of a static website on AWS S3 and CloudFront using Bash scripts for efficient setup and management of cloud resources. Enhanced delivery performance using CloudFront’s global CDN capabilities.</p>
+                    <p><strong>Skills Used:</strong> Bash Scripting, AWS S3, AWS CloudFront</p>
+                </li>
+            </ul>
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>B. Com (2023) - Shree Atam Vallabh College, Punjab</li>
+                <li>CBSE XII (2020) - Kundan Vidya Mandir, Punjab</li>
+                <li>CBSE X (2018) - Kundan Vidya Mandir, Punjab</li>
+            </ul>
+        </section>
+    </main>
     <footer>
-        &copy; 2024 Kuber Lekhi | Contact: 
-        <a href="mailto:kuberlekhi@gmail.com">kuberlekhi@gmail.com</a> | 
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a> | 
-        <a href="https://github.com" target="_blank">GitHub</a>
+        <p>&copy; 2024 Kuber Lekhi</p>
     </footer>
 </body>
 </html>
